@@ -9,6 +9,11 @@ Authors:
 
 import requests
 
+def retrieveBlock(block_id, headers):
+    url = f"https://api.notion.com/v1/blocks/{block_id}"
+    response = requests.request("GET", url=url, headers=headers)
+    return response
+
 def appendBlockChildren(block_id, headers, *payloads):
     """Appends a item to a block or a page.
 
