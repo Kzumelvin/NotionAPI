@@ -9,3 +9,6 @@ secret = config.get('NOTION', 'secret')
 
 print(database_id, secret)
 print(yt.getVideoId("https://www.youtube.com/watch?v=Mygh_puOUD4"))
+
+if __name__ == "__main__":
+    print("You are using the NotionAPI Python script")
